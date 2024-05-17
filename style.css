@@ -67,7 +67,7 @@
     position: relative;
     top: -100px;
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     padding-inline: 150px;
 
@@ -632,88 +632,94 @@ footer {
 
     footer {
         height: auto;
-        display: flex;
         flex-wrap: wrap;
         padding: 50px 50px;
-        gap: 10px;
-        justify-content: center;
-    
-        a {
-            font-size: 25px;
-            text-decoration: underline;
-            color: #fff;
-        }
-    
+        gap: 30px;
+
         .one {
             width: 300px;
-    
-            div {
-                margin-top: 20px;
-    
-                div {
-                    img {
-                        margin-right: 15px;
-                        height: 40px;
-                    }
-                }
-            }
         }
-    
+
         .two {
             width: 300px;
-    
+
             div {
-                margin-block: 10px;
+                margin-block: 0px;
                 display: flex;
                 gap: 10px;
-    
-                img {
-                    object-fit: cover;
-                    height: 100px;
-                    width: 100px;
-                }
-    
+
                 div {
-                    display: block;
-    
                     ul {
                         padding: 0;
-                        list-style-type: none;
-                        display: flex;
-                        gap: 5px;
                     }
                 }
             }
         }
-    
+
         .three {
             width: 300px;
-    
+
             ul {
-                list-style-type: none;
-                padding: 0;
-    
-                li {
-                    margin-block: 20px;
-                }
-            }
-        }
-    
-        .four {
-            width: 300px;
-    
-            ul {
-                list-style-type: none;
-                padding: 0;
-    
                 li {
                     margin-block: 10px;
                 }
             }
         }
-    }
-    
 
+        .four {
+            width: 300px;
+        }
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    .reactBlog .card-sec {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 50px 50px;
+        gap: 30px;
+
+        .one {
+            width: 300px;
+        }
+
+        .two {
+            width: 300px;
+
+            div {
+                margin-block: 0px;
+                display: flex;
+                gap: 10px;
+
+                div {
+                    ul {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+        .three {
+            width: 300px;
+
+            ul {
+                li {
+                    margin-block: 10px;
+                }
+            }
+        }
+
+        .four {
+            width: 300px;
+        }
+    }
 }
 
 @media only screen and (min-width: 768px) {
